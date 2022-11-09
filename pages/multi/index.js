@@ -32,8 +32,8 @@ const Multi = () => {
   <button onClick={onChangeHandler}>Send</button>
  
  <div>
-    {messages&&messages.map(item=>
-    <div className='flex'>
+    {messages&&messages.map((item,idx)=>
+    <div className='flex' key={idx}>
         <div>{item.name}</div>
         <div>{item.msg}</div>
         </div>
