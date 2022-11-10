@@ -131,7 +131,7 @@ const imgHandler = () => {
        <div> Photo Url : <input type="text" ref={imgRef} /> <button className="border-2 border-white" onClick={imgHandler}>Load</button></div>
        </div>
         </div>
-       
+       <div>RoomId : {roomId}</div>
        <ChatBox roomId={roomId} playerNo={playerNo}/>
         </div>
     )
